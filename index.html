@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+
+    <title>Payment Form</title>
+</head>
+
+<body class="m-5">
+    <form action="" class="border border-2">
+        <h2 class="bg-light p-2 border-bottom border-2">Payment form example</h2>
+        <div class="alert alert-danger mx-3">Some fields are missing</div>
+        <section class="row g-3 mx-3">
+            <div class="col-5">
+                <label for="form-control">Card #</label>
+                <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXXXXXXXXXX" aria-label="Card">
+            </div>
+            <div class="col">
+                <label for="form-control">CVC #</label>
+                <input type="text" class="form-control" placeholder="0000" aria-label="CVC">
+            </div>
+            <div class="col">
+                <label for="form-control">Amount </label>
+                <input type="text" class="form-control" placeholder="Amount" aria-label="Amount">
+            </div>
+        </section>
+        <section class="row g-3 mx-3">
+            <div class="col">
+                <label for="form-control">First name</label>
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+                <label for="form-control">Last name</label>
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+        </section>
+        <section class="row g-3 mx-3">
+            <div class="col-6">
+                <label for="form-control">City</label>
+                <input type="text" class="form-control" aria-label="City">
+            </div>
+            <div class="col">
+                <label for="form-control">State</label>
+                <select class="form-select" aria-label="State">
+                    <option selected>Pick a state</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="form-control">Postal Code</label>
+                <input type="text" class="form-control" aria-label="Postal code">
+            </div>
+        </section>
+        <section class="row g-3 pb-5 mx-3">
+            <div class="col">
+                <p for="form-control">We Accept:</p>
+
+                <div class="botones-visa bg-secondary rounded-3 ps-1">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><i
+                                class="fa-brands fa-cc-mastercard"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3"><i
+                                class="fa-solid fa-money-check"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option4">
+                        <label class="form-check-label" for="inlineRadio3"><i
+                                class="fa-solid fa-money-check-dollar"></i></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <label for="form-control">Messages</label>
+                <textarea class="form-control" placeholder="Add any notes here." style="height: 100px"></textarea>
+
+            </div>
+        </section>
+        <footer class="d-flex justify-content-end py-2 bg-light border-top border-2">
+            <div class="btn-group" role="group" aria-label="button-footer">
+                <button type="button" class="btn btn-secondary me-2 rounded-3">Cancel</button>
+                <button type="button" class="btn btn-primary me-2 rounded-3">Send</button>
+            </div>
+        </footer>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
